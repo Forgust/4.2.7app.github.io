@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #c4c4c4;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 60px;
+  gap: 45px;
+}
+
+.search-box {
+  font-size: 30px;
+  height: auto;
+  width: 500px;
+}
+
+.search-input {
+  width: 100%;
+  height: 61px;
+  border: none;
+  padding: 13px;
+  font-size: 46px;
+}
+
+.search-results {
+  height: auto;
+}
+
+.search-element {
+  overflow: hidden;
+  list-style: none;
+  padding-left: 13px;
+  padding-top: 5px;
+  height: 44px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+.search-element:hover {
+  background-color: #65cdf9;
+}
+
+.saved-box {
+  width: 503px;
+  height: 500px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.saved-element {
+  height: 100px;
+  width: 100%;
+  background-color: #e27beb;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 17px;
+  align-items: center;
+}
+
+.saved-element_text {
+  width: 100%;
+  height: 100%;
+  white-space: pre;
+}
+
+.delete {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.delete::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateX(22px) rotate(45deg);
+  height: 50px;
+  width: 4px;
+  background-color: red;
+}
+
+.delete::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateX(22px) rotate(-45deg);
+  height: 50px;
+  width: 4px;
+  background-color: red;
+}
